@@ -8,3 +8,5 @@ uwu owo uwu owo
 Currently: Develop AI
 
 //Wait, what kind of frogs do we want?
+
+we out here game devving
