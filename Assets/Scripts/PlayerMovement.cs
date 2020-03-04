@@ -42,15 +42,5 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.velocity=( moveInput *BASE_PLAYER_SPEED *speed);
     }
-
-    //Killing Player
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag.Equals ("Enemy"))
-        {
-            gameObject.SetActive(false);
-        }
-    }
-
 }
-//this comment doesnt do anything, just wanna see how git reacts yeet
+

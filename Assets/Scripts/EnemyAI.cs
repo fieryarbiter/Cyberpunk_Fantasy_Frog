@@ -27,12 +27,12 @@ public class EnemyAI : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
     }
 
-    //Kill if touched by weapon
+    //Killing Player
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag.Equals("Weapon"))
+        if (collision.gameObject.tag.Equals("Player"))
         {
-            gameObject.SetActive(false);
+            collision.gameObject.SetActive(false);
         }
     }
 }
